@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Weather Dashboard</title>
+ 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
+   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <div class="jumbotron col-5 container-fluid text-center font-weight-bold custom-header">
+        <h1> <strong>Weather Dashboard</strong></h1>
+    </div>
+    <div class="col-12">
+     
+        <div class="row bg-dark text-light">
+            <div class="col-sm-4 bg-dark text-dark">
+             
+                <h4 class="text-dark"><strong>Search for a City:</strong></h4>
+              
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control"id="city" aria-label="City Search" aria-describedby="search">
+                    <div class="input-group-append">
+                        <button class=" btn bg-primary text-dark" id="search"><i class="fa fa-search"></i></button>
+                    </div>
+                </div>
+               
+                <button class=" btn btn-primary text-white bg-dark" type="button" id="clear">Refresh</button>
+                <ul class="list-group text-light bg-dark">
+
+                </ul>
+            </div>   
+            <div class="row">
+                <div class="row ml-2 border border-dark rounded">
+                    <div class="col-sm-12 custom-city" id="presentweather">
+                        <h3 class="city-name mb-1 mt-2 bolder" id="presentplace"></h3>
+                        <p>UV:<span class="present  rounded  text-white custom-city" id="uv"></span></p> 
+                        <p>Temperature of city:<span class="present custom-city" id="temp"></span></p>
+                        <p>Speed of Wind:<span class="present custom-city" id="wind"></span></p>
+                        <p>Humidity Percentage:<span class="present custom-city" id="hmdty"></span></p> 
+                  
+                    </div>
+                </div>
+                <div class=" row bg-dark justify-content-center" id ="forecastedfuture">
+                    <h3>Future Weather </h3>
+                    <div class="row bg-dark col-12  bg-secondary justify-content-center">
+                        <div class="col bg-dark forecast bg-secondary p-2 flex-grow-3 ">
+                            <p id="futuredate0"></p>
+                            <p>Temp:<span id="futuretemp0"></span></p>
+                            <p>Humidity:<span id="futurehu0"></span></p>
+                        </div>
+                        <div class="col bg-dark forecast text-white p-2 flex-grow-3" >
+                            <p id="futuredate1"></p>
+                            <p>Temp:<span id="futuretemp1"></span></p>
+                            <p>Humidity:<span id="futurehu1"></span></p>
+                        </div>
+                        <div class="col bg-dark forecast text-white p-2 flex-grow-3 ">
+                            <p id="futuredate2"></p>
+                            <p>Temp:<span id="futuretemp2"></span></p>
+                            <p>Humidity:<span id="futurehu2"></span></p>
+                        </div>
+                        <div class="col bg-dark forecast text-white p-2 flex-grow-3 ">
+                            <p id="futuredate3"></p>
+                            <p>Temp:<span id="futuretemp3"></span></p>
+                            <p>Humidity:<span id="futurehu3"></span></p>
+                        </div>
+                        <div class="col bg-dark forecast text-white p-2 flex-grow-3" >
+                            <p id="futuredate4"></p>
+                            <p>Temp:<span id="futuretemp4"></span></p>
+                            <p>Humidity:<span id="futurehu4"></span></p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+   
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+   
+    <script src="script.js"></script>
+</body>
+</html>
